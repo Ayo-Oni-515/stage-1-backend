@@ -24,6 +24,8 @@ def is_perfect(number):
 
 
 def armstrong(number):
+    number = abs(number)
+
     total = 0
     for i in list(str(number)):
         total += int(i)**len(str(number))
@@ -47,6 +49,8 @@ def properties(number):
 
 
 def digit_sum(number):
+    number = abs(number)
+    
     total = 0
     for i in list(str(number)):
         total += int(i)
